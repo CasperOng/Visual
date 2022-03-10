@@ -4,10 +4,6 @@ from core.classes import Cog_Extension
 import json
 import random, os, asyncio
 
-"""
-1.5 重大更新需加入intents 詳細請閱讀官方文件
-https://discordpy.readthedocs.io/en/latest/intents.html#intents-primer
-"""
 # 啟用所有 intents
 intents = discord.Intents.all()
 
