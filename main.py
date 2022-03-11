@@ -3,6 +3,8 @@ from discord.ext import commands
 from core.classes import Cog_Extension
 import json
 import random, os, asyncio
+from keep_alive import keep_alive
+
 
 # 啟用所有 intents
 intents = discord.Intents.all()
@@ -29,5 +31,6 @@ for filename in os.listdir('./cmds'):
 		bot.load_extension(f'cmds.{filename[:-3]}')
 
 if __name__ == "__main__":
-	bot.run(jdata['TOKEN'])
+  keep_alive()
+  bot.run(jdata['TOKEN'])
 	
